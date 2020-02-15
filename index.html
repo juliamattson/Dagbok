@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Min dagbok</title>
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body onload="initSite()">
+    <div id="header">Min dagbok</div>
+
+    <div id="posts"></div>
+    
+    <button class="open-button" onclick="openForm()">Skriv nytt inlägg</button>
+    
+    <div class="popup" id="myForm">
+        <div class="container">
+        <h1>Skriv nytt inlägg</h1>
+        <input type="date" id="date">
+        </br></br>
+        <label><b>Rubrik</b></label>
+        <input type="text" placeholder="Skriv rubrik" id="input1" >
+    
+        <label><b>Anteckning</b></label>
+        <input type="text" placeholder="Skriv din text här.." id="input2">
+    
+        <button class="publish" onclick="writePost()">Publicera!</button>
+        <button class="cancel" onclick="closeForm()">Stäng</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
