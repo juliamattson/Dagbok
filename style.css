@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: thistle;
+    color: white;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 5px 0px 5px 0px;
+}
+
+.postDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid thistle;
+    border-radius: 5px;
+    padding: 5px 5px 10px 5px;
+    margin: 5px;
+    width: 200px;
+}
+
+.postTitle {
+    display: flex;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 0;
+    font-weight: bold;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.dateText {
+    margin-top: 3px;
+    font-size: 12px;
+}
+
+.postText {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 200px;
+    font-size: 15px;
+    margin: 0;
+    padding: 0px 10px 0px 10px;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: rgb(177, 150, 177);
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 140px;
+}
+
+.open-button:hover {
+    background-color: rgb(148, 113, 148);
+    cursor: pointer;
+}
+
+/* The popup form - hidden by default */
+.popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+  }
+
+#input1, #input2 {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    background: #f1f1f1;
+}
+
+/* Stil för publicera-knapp */
+.publish {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 10px;
+  cursor: pointer;
+  width: 100px;
+  margin-bottom:10px;
+}
+
+.publish:hover {
+    background-color: rgb(157, 211, 159);
+}
+
+/* Stil för stäng-knapp */
+.cancel {
+    background-color: red;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 100px;
+    margin-bottom:10px;
+}
+
+.cancel:hover {
+    background-color: rgb(250, 85, 85);
+}
